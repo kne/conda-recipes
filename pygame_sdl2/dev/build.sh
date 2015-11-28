@@ -17,7 +17,7 @@ elif [[ "$(uname)" == "Linux" ]]; then
         echo "** warning: Can only check dependencies on ubuntu/debian"
     else
         echo "Checking dependencies..."
-        declare -a packages=("build-essential" "python-dev" "libsdl2-dev"
+        declare -a packages=("build-essential" "libsdl2-dev"
                              "libsdl2-image-dev" "libsdl2-mixer-dev"
                              "libsdl2-ttf-dev" "libjpeg-dev" "libpng12-dev")
 
