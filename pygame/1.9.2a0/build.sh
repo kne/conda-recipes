@@ -5,7 +5,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
         echo "Sorry, OSX requires a homebrew installation!"
         exit 1
     fi
-    brew install sdl sdl_image sdl_mixer sdl_ttf portmidi smpeg
+    brew install jpeg libpng freetype
+    brew install sdl sdl_gfx sdl_image sdl_mixer sdl_net sdl_ttf 
+    brew install portmidi smpeg
 elif [[ "$(uname)" == "Linux" ]]; then
     if [[ -z "$(which apt-get)" ]]; then
         echo "** warning: Can only check dependencies on ubuntu/debian"
