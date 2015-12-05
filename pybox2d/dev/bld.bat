@@ -1,6 +1,11 @@
 if not exist C:\dev\swig goto noswig
 
+echo on
+
 set PATH=C:\dev\swig;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC;%PATH%
+
+rem NOTE: git version tag broken on conda-build-1.18.2 (revert to 1.18.1 or use
+rem       the version after when it's released)
 
 @echo off
 rem NOTE: If building under MobaSSH, the C:\Windows\System32\bsh\temp path is an issue
