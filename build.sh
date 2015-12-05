@@ -9,4 +9,5 @@ conda config --set anaconda_upload yes
 conda build pygame/1.9.2a0/ $PYTHON_VERSIONS
 conda build pyglet/1.2.4/ $PYTHON_VERSIONS
 conda build pygame_sdl2/dev/ $PYTHON_VERSIONS
+conda build pybox2d/dev/ $PYTHON_VERSIONS
 conda config --set anaconda_upload no
