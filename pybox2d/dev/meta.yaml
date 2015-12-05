@@ -14,7 +14,8 @@ build:
 requirements:
   build:
     - python
-    - swig >=3
+    - swig >=3  # [unix]
+    # Note: Windows requires a separate installation, see bld.bat for details
 
   run:
     - python
@@ -25,10 +26,11 @@ test:
     - Box2D.b2
 
   commands:
-    - cd $SRC_DIR
-    - nosetests -v tests
+    - cd $SRC_DIR  # [unix]
+    - nosetests -v tests  # [unix]
     - $RECIPE_DIR/example_tests.sh  # [unix]
-    - $RECIPE_DIR/example_tests.cmd  # [win]
+
+    - call %RECIPE_DIR%/all_tests.cmd  # [win]
 
   requires:
   - nose
