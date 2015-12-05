@@ -5,9 +5,9 @@ package:
   version: {{ environ.get('GIT_DESCRIBE_TAG', 'unknown').replace('renpy-', '') }}plus{{ environ.get('GIT_DESCRIBE_NUMBER','') }}
 
 source:
-  # git_url: https://github.com/renpy/pygame_sdl2
-  git_url: https://github.com/kne/pygame_sdl2
-  git_branch: process_namehint_py3k
+  git_url: https://github.com/renpy/pygame_sdl2
+  # git_url: https://github.com/kne/pygame_sdl2
+  git_branch: master
 
 build:
   number: 0
